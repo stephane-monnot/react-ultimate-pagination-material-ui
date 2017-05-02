@@ -12,7 +12,8 @@
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel src -d lib",
     "build:umd": "webpack --output-filename react-ultimate-pagination-material-ui.js",
-    "build:umd.min": "webpack --output-filename react-ultimate-pagination-material-ui.min.js -p"
+    "build:umd.min": "webpack --output-filename react-ultimate-pagination-material-ui.min.js -p",
+    "postinstall": "postinstall-build --only-as-dependency build \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "material-ui": ">=0.15.0"
   },
   "dependencies": {
+    "postinstall-build": "^3.0.1",
     "react-ultimate-pagination": "1.0.1"
   },
   "devDependencies": {
