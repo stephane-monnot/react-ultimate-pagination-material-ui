@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/ultimate-pagination/react-ultimate-pagination-material-ui#readme",
   "peerDependencies": {
-    "material-ui": ">=0.15.0"
+    "material-ui": "^1.0.0-alpha.12"
   },
   "dependencies": {
     "postinstall-build": "^3.0.1",
